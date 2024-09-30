@@ -10,5 +10,13 @@ L'output del prezzo finale va messo fuori in forma umana (con massimo due decima
 
 let kms;
 let age;
+let price;
+
+kms = prompt('Inserisci i chilometri da percorrere');
+age = prompt('Inserisci la tua età');
+console.log(kms);
+console.log(age);
+
+
 
 
