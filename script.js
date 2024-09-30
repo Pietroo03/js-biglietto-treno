@@ -17,11 +17,15 @@ age = Number(window.prompt('Inserisci la tua età'));
 console.log(kms);
 console.log(age);
 
+price = kms * 0.21   
 if (age < 18) {
-    price = (kms * 0,21) - 20 %   
+    price = price - (price / 100 * 20)
 } else if (age > 65) {
-    price = (kms * 0,21) - 40 %
+    price = price - (price / 100 * 40)
 } else {
-    price = (kms * 0,21)
+    price = kms * 0.21
 }
+
+console.log(price)
+
 
