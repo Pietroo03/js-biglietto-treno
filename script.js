@@ -12,6 +12,7 @@ let kms;
 let age;
 let price;
 let finalPrice;
+let message;
 
 kms = Number(prompt('Inserisci i chilometri da percorrere'));
 age = Number(prompt('Inserisci la tua età'));
@@ -21,11 +22,18 @@ console.log(age);
 price = kms * 0.21
 if (age < 18) {
     price = price - (price / 100 * 20)
+    finalPrice = price.toFixed(2)
+    message = `Il costo del tuo biglietto è di ${finalPrice} sconto applicato del 20%`
 } else if (age > 65) {
     price = price - (price / 100 * 40)
+    finalPrice = price.toFixed(2)
+    message = `Il costo del tuo biglietto è di ${finalPrice} sconto applicato del 40%`
+} else {
+    price = kms * 0.21
+    finalPrice = price.toFixed(2)
+    message = `Il costo del tuo biglietto è di ${finalPrice}`
 }
 
-finalPrice = price.toFixed(2)
-console.log(finalPrice)
+console.log(finalPrice, message)
 
 
