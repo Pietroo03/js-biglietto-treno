@@ -23,8 +23,6 @@ if (age < 18) {
     price = price - (price / 100 * 20)
 } else if (age > 65) {
     price = price - (price / 100 * 40)
-} else {
-    price = kms * 0.21
 }
 
 finalPrice = price.toFixed(2)
