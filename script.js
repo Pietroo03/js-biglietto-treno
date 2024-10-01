@@ -13,8 +13,8 @@ let age;
 let price;
 let finalPrice;
 
-kms = Number(window.prompt('Inserisci i chilometri da percorrere'));
-age = Number(window.prompt('Inserisci la tua età'));
+kms = Number(prompt('Inserisci i chilometri da percorrere'));
+age = Number(prompt('Inserisci la tua età'));
 console.log(kms);
 console.log(age);
 
